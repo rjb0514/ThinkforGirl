@@ -31,3 +31,9 @@ UIKIT_EXTERN NSString *const RJBUserSexMale;
 //用户模型 女性
 UIKIT_EXTERN NSString *const RJBUserSexFemale;
 
+
+
+#pragma mark - 标签模块
+//图片贴子cell的间距
+UIKIT_EXTERN CGFloat const RJBTagMargin;
+

@@ -14,6 +14,8 @@
 
 @property (nonatomic, strong) RJBAddTagToolBar *toolBar;
 
+@property (nonatomic, strong)  RJBTextView *textView;
+
 @end
 
 @implementation RJBPushWordViewController
@@ -25,8 +27,16 @@
     [self setupNav];
     [self setupTextView];
     [self setupToolBar];
+}
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     
+    [self.textView becomeFirstResponder];
 }
 
 - (void)setupToolBar {
@@ -41,11 +51,17 @@
 
 //键盘的高度
 - (void)keyBoardWillChangeFrame:(NSNotification *)note {
-    NSLog(@"%@",note);
+    NSLog(@"-----");
     //键盘的最终frame
     CGRect keyboardF = [note.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
     
-    self.toolBar.transform = CGAffineTransformMakeTranslation(0, RJBScreenH - keyboardF.origin.y);
+    CGFloat duration = [note.userInfo[UIKeyboardAnimationDurationUserInfoKey] floatValue];
+//    self.toolBar.transform = CGAffineTransformMakeTranslation(0, keyboardF.origin.y -RJBScreenH);
+    [UIView animateWithDuration:duration animations:^{
+
+        self.toolBar.transform = CGAffineTransformMakeTranslation(0, keyboardF.origin.y -RJBScreenH);
+    }];
+    
     
     
 }
@@ -56,7 +72,9 @@
     textView.frame = self.view.bounds;
     textView.placeholder = @"把好玩的图片经发局放得开龙角散了发动机萨洛克飞机都是垃圾反倒是垃圾";
     textView.delegate = self;
+    [textView becomeFirstResponder];
     [self.view addSubview:textView];
+    self.textView = textView;
     
     
 }
@@ -74,13 +92,6 @@
     [self.navigationController.navigationBar  layoutIfNeeded];
 }
 
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    
-    
-    
-}
 
 - (void)cancel {
     NSLog(@"取消");

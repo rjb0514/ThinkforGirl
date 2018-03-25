@@ -16,3 +16,7 @@ CGFloat const RJBTopicCellMargin = 10;
 NSString *const RJBUserSexMale = @"m";
 //用户模型 女性
 NSString *const RJBUserSexFemale = @"f";
+
+
+//标签的间距
+CGFloat const RJBTagMargin = 5;

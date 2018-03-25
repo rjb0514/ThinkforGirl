@@ -63,6 +63,8 @@
 		93D158BE2067A0E400F09F15 /* RJBTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D158BC2067A0E400F09F15 /* RJBTextView.m */; };
 		93D158C12067A5DC00F09F15 /* RJBAddTagToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D158C02067A5DC00F09F15 /* RJBAddTagToolBar.m */; };
 		93D158C32067A5E800F09F15 /* RJBAddTagToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93D158C22067A5E800F09F15 /* RJBAddTagToolBar.xib */; };
+		93D158C62067C1D100F09F15 /* RJBAddTageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D158C52067C1D100F09F15 /* RJBAddTageViewController.m */; };
+		93D158CC2067E63C00F09F15 /* RJBTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D158CB2067E63B00F09F15 /* RJBTagButton.m */; };
 		F702D4F63C79996FC801B427 /* libPods-ThinkforGirl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C924858BD3CEA6CE94AEFCE /* libPods-ThinkforGirl.a */; };
 /* End PBXBuildFile section */
 
@@ -167,6 +169,10 @@
 		93D158BF2067A5DC00F09F15 /* RJBAddTagToolBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBAddTagToolBar.h; sourceTree = "<group>"; };
 		93D158C02067A5DC00F09F15 /* RJBAddTagToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBAddTagToolBar.m; sourceTree = "<group>"; };
 		93D158C22067A5E800F09F15 /* RJBAddTagToolBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RJBAddTagToolBar.xib; sourceTree = "<group>"; };
+		93D158C42067C1D100F09F15 /* RJBAddTageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBAddTageViewController.h; sourceTree = "<group>"; };
+		93D158C52067C1D100F09F15 /* RJBAddTageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBAddTageViewController.m; sourceTree = "<group>"; };
+		93D158CA2067E63B00F09F15 /* RJBTagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBTagButton.h; sourceTree = "<group>"; };
+		93D158CB2067E63B00F09F15 /* RJBTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBTagButton.m; sourceTree = "<group>"; };
 		EE8CC522CA849887E953FC4B /* Pods-ThinkforGirl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkforGirl.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThinkforGirl/Pods-ThinkforGirl.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -513,6 +519,8 @@
 				93D158532058195300F09F15 /* RJBPublishViewController.xib */,
 				93D158692060839400F09F15 /* RJBPushWordViewController.h */,
 				93D1586A2060839400F09F15 /* RJBPushWordViewController.m */,
+				93D158C42067C1D100F09F15 /* RJBAddTageViewController.h */,
+				93D158C52067C1D100F09F15 /* RJBAddTageViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -520,6 +528,8 @@
 		93D158502058191200F09F15 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				93D158CA2067E63B00F09F15 /* RJBTagButton.h */,
+				93D158CB2067E63B00F09F15 /* RJBTagButton.m */,
 				93D158BD2067A0E400F09F15 /* RJBTextView.h */,
 				93D158BC2067A0E400F09F15 /* RJBTextView.m */,
 				93D158BF2067A5DC00F09F15 /* RJBAddTagToolBar.h */,
@@ -678,6 +688,7 @@
 				93D158C12067A5DC00F09F15 /* RJBAddTagToolBar.m in Sources */,
 				93C36B6A1FDD30E300520EEB /* AppDelegate.m in Sources */,
 				93C36B671FDD30E300520EEB /* RJBEssenceViewController.m in Sources */,
+				93D158C62067C1D100F09F15 /* RJBAddTageViewController.m in Sources */,
 				93D1586B2060839400F09F15 /* RJBPushWordViewController.m in Sources */,
 				93C36B8D1FE0246400520EEB /* RJBRecommendTagsTableViewController.m in Sources */,
 				93C36B7D1FDD5C0000520EEB /* RJBRecommendTagCell.m in Sources */,
@@ -690,6 +701,7 @@
 				937FE5DD1FE6171B00667E99 /* RJBLoginViewController.m in Sources */,
 				93C36B131FD8357B00520EEB /* main.m in Sources */,
 				93D158542058195300F09F15 /* RJBPublishViewController.m in Sources */,
+				93D158CC2067E63C00F09F15 /* RJBTagButton.m in Sources */,
 				937FE5F21FE8151000667E99 /* RJBGuidView.m in Sources */,
 				93C36B751FDD4BC900520EEB /* RJBRecommendController.m in Sources */,
 				93C36B911FE026E400520EEB /* RJBRecommendTagsModel.m in Sources */,

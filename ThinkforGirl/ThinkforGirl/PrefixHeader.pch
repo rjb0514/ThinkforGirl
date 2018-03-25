@@ -30,8 +30,13 @@
 #define RJBScreenW [UIScreen mainScreen].bounds.size.width
 //屏幕的高度
 #define RJBScreenH [UIScreen mainScreen].bounds.size.height
-
+//系统通知中心
 #define RJBNoteCenter [NSNotificationCenter defaultCenter]
+//打印函数名称
+#define RJBFunc NSLog(@"%s",__func__)
+
+//标签的背景颜色
+#define RJBTagBtnBJ  RJBRGBColor(74, 139, 209)
 
 #endif
 
