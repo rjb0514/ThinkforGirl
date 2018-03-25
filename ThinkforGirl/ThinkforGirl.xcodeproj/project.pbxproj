@@ -1,0 +1,881 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93636A6C2016361200870C02 /* RJBTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93636A6B2016361200870C02 /* RJBTopicVoiceView.m */; };
+		93636A6E2016361D00870C02 /* RJBTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93636A6D2016361D00870C02 /* RJBTopicVoiceView.xib */; };
+		93636A712046F36400870C02 /* RJBTopVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93636A702046F36400870C02 /* RJBTopVideoView.m */; };
+		93636A732046F36D00870C02 /* RJBTopVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93636A722046F36D00870C02 /* RJBTopVideoView.xib */; };
+		937FE5DD1FE6171B00667E99 /* RJBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FE5DB1FE6171B00667E99 /* RJBLoginViewController.m */; };
+		937FE5DE1FE6171B00667E99 /* RJBLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 937FE5DC1FE6171B00667E99 /* RJBLoginViewController.xib */; };
+		937FE5E11FE6263D00667E99 /* RJBOneTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FE5E01FE6263D00667E99 /* RJBOneTextField.m */; };
+		937FE5EC1FE814F000667E99 /* RJBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FE5E31FE814F000667E99 /* RJBBaseViewController.m */; };
+		937FE5ED1FE814F000667E99 /* RJBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FE5E51FE814F000667E99 /* RJBTabBarController.m */; };
+		937FE5EE1FE814F000667E99 /* RJBTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FE5E81FE814F000667E99 /* RJBTabBar.m */; };
+		937FE5EF1FE814F000667E99 /* RJBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FE5E91FE814F000667E99 /* RJBNavigationController.m */; };
+		937FE5F21FE8151000667E99 /* RJBGuidView.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FE5F11FE8151000667E99 /* RJBGuidView.m */; };
+		937FE5F41FE8151800667E99 /* RJBGuidView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 937FE5F31FE8151800667E99 /* RJBGuidView.xib */; };
+		937FE6071FEAB77700667E99 /* RJBTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FE6061FEAB77700667E99 /* RJBTopicModel.m */; };
+		937FE60A1FEBF93300667E99 /* RJBConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FE6091FEBF93300667E99 /* RJBConst.m */; };
+		937FE60E1FEBFC1A00667E99 /* RJBTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FE60C1FEBFC1A00667E99 /* RJBTopicCell.m */; };
+		937FE60F1FEBFC1A00667E99 /* RJBTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 937FE60D1FEBFC1A00667E99 /* RJBTopicCell.xib */; };
+		937FE6121FF14CAC00667E99 /* NSDate+RJBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FE6111FF14CAC00667E99 /* NSDate+RJBExtension.m */; };
+		937FE6151FF2917D00667E99 /* RJBBaseTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FE6141FF2917D00667E99 /* RJBBaseTopicController.m */; };
+		937FE6181FF3EAA200667E99 /* RJBTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FE6171FF3EAA100667E99 /* RJBTopicPictureView.m */; };
+		937FE61A1FF3EB1E00667E99 /* RJBTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 937FE6191FF3EB1E00667E99 /* RJBTopicPictureView.xib */; };
+		937FE6211FFBDD2500667E99 /* RJBShowPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 937FE61F1FFBDD2500667E99 /* RJBShowPictureViewController.m */; };
+		937FE6221FFBDD2500667E99 /* RJBShowPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 937FE6201FFBDD2500667E99 /* RJBShowPictureViewController.xib */; };
+		93C36B0D1FD8357A00520EEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C36B0C1FD8357A00520EEB /* Assets.xcassets */; };
+		93C36B131FD8357B00520EEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C36B121FD8357B00520EEB /* main.m */; };
+		93C36B611FDD30E300520EEB /* UIBarButtonItem+RJBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C36B3C1FDD30E300520EEB /* UIBarButtonItem+RJBExtension.m */; };
+		93C36B621FDD30E300520EEB /* UIView+RJBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C36B3D1FDD30E300520EEB /* UIView+RJBExtension.m */; };
+		93C36B631FDD30E300520EEB /* UIButton+RJBButtonBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C36B3E1FDD30E300520EEB /* UIButton+RJBButtonBlock.m */; };
+		93C36B671FDD30E300520EEB /* RJBEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C36B4B1FDD30E300520EEB /* RJBEssenceViewController.m */; };
+		93C36B681FDD30E300520EEB /* RJBNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C36B511FDD30E300520EEB /* RJBNewViewController.m */; };
+		93C36B691FDD30E300520EEB /* RJBMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C36B581FDD30E300520EEB /* RJBMeViewController.m */; };
+		93C36B6A1FDD30E300520EEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C36B5A1FDD30E300520EEB /* AppDelegate.m */; };
+		93C36B6B1FDD30E300520EEB /* RJBFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C36B5E1FDD30E300520EEB /* RJBFriendTrendsViewController.m */; };
+		93C36B711FDD41E700520EEB /* RJBFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C36B701FDD41E700520EEB /* RJBFriendTrendsViewController.xib */; };
+		93C36B751FDD4BC900520EEB /* RJBRecommendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C36B731FDD4BC900520EEB /* RJBRecommendController.m */; };
+		93C36B761FDD4BC900520EEB /* RJBRecommendController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C36B741FDD4BC900520EEB /* RJBRecommendController.xib */; };
+		93C36B791FDD597E00520EEB /* RJBRecommendTagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C36B781FDD597E00520EEB /* RJBRecommendTagModel.m */; };
+		93C36B7D1FDD5C0000520EEB /* RJBRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C36B7B1FDD5C0000520EEB /* RJBRecommendTagCell.m */; };
+		93C36B7E1FDD5C0000520EEB /* RJBRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C36B7C1FDD5C0000520EEB /* RJBRecommendTagCell.xib */; };
+		93C36B821FDD6E4700520EEB /* RJBRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C36B801FDD6E4700520EEB /* RJBRecommendUserCell.m */; };
+		93C36B831FDD6E4700520EEB /* RJBRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C36B811FDD6E4700520EEB /* RJBRecommendUserCell.xib */; };
+		93C36B861FDD709900520EEB /* RJBRecommendUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C36B851FDD709900520EEB /* RJBRecommendUserModel.m */; };
+		93C36B8D1FE0246400520EEB /* RJBRecommendTagsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C36B8B1FE0246400520EEB /* RJBRecommendTagsTableViewController.m */; };
+		93C36B8E1FE0246400520EEB /* RJBRecommendTagsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C36B8C1FE0246400520EEB /* RJBRecommendTagsTableViewController.xib */; };
+		93C36B911FE026E400520EEB /* RJBRecommendTagsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C36B901FE026E400520EEB /* RJBRecommendTagsModel.m */; };
+		93C36B951FE0286200520EEB /* RJBRecommendTagTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C36B931FE0286200520EEB /* RJBRecommendTagTableViewCell.m */; };
+		93C36B961FE0286200520EEB /* RJBRecommendTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93C36B941FE0286200520EEB /* RJBRecommendTagTableViewCell.xib */; };
+		93D15821204C39E900F09F15 /* RJBUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D15820204C39E900F09F15 /* RJBUserModel.m */; };
+		93D15824204C3AEC00F09F15 /* RJBCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D15823204C3AEC00F09F15 /* RJBCommentModel.m */; };
+		93D1584C2055429900F09F15 /* UIImage+RJBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D1584B2055429900F09F15 /* UIImage+RJBExtension.m */; };
+		93D158542058195300F09F15 /* RJBPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D158522058195300F09F15 /* RJBPublishViewController.m */; };
+		93D158552058195300F09F15 /* RJBPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93D158532058195300F09F15 /* RJBPublishViewController.xib */; };
+		93D1586B2060839400F09F15 /* RJBPushWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D1586A2060839400F09F15 /* RJBPushWordViewController.m */; };
+		93D158BE2067A0E400F09F15 /* RJBTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D158BC2067A0E400F09F15 /* RJBTextView.m */; };
+		93D158C12067A5DC00F09F15 /* RJBAddTagToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D158C02067A5DC00F09F15 /* RJBAddTagToolBar.m */; };
+		93D158C32067A5E800F09F15 /* RJBAddTagToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93D158C22067A5E800F09F15 /* RJBAddTagToolBar.xib */; };
+		F702D4F63C79996FC801B427 /* libPods-ThinkforGirl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C924858BD3CEA6CE94AEFCE /* libPods-ThinkforGirl.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0848C04B31E54D10588D1B69 /* Pods-ThinkforGirl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkforGirl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThinkforGirl/Pods-ThinkforGirl.debug.xcconfig"; sourceTree = "<group>"; };
+		2C924858BD3CEA6CE94AEFCE /* libPods-ThinkforGirl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThinkforGirl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93636A6A2016361200870C02 /* RJBTopicVoiceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBTopicVoiceView.h; sourceTree = "<group>"; };
+		93636A6B2016361200870C02 /* RJBTopicVoiceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBTopicVoiceView.m; sourceTree = "<group>"; };
+		93636A6D2016361D00870C02 /* RJBTopicVoiceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RJBTopicVoiceView.xib; sourceTree = "<group>"; };
+		93636A6F2046F36400870C02 /* RJBTopVideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBTopVideoView.h; sourceTree = "<group>"; };
+		93636A702046F36400870C02 /* RJBTopVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBTopVideoView.m; sourceTree = "<group>"; };
+		93636A722046F36D00870C02 /* RJBTopVideoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RJBTopVideoView.xib; sourceTree = "<group>"; };
+		937FE5DA1FE6171B00667E99 /* RJBLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBLoginViewController.h; sourceTree = "<group>"; };
+		937FE5DB1FE6171B00667E99 /* RJBLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBLoginViewController.m; sourceTree = "<group>"; };
+		937FE5DC1FE6171B00667E99 /* RJBLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RJBLoginViewController.xib; sourceTree = "<group>"; };
+		937FE5DF1FE6263D00667E99 /* RJBOneTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBOneTextField.h; sourceTree = "<group>"; };
+		937FE5E01FE6263D00667E99 /* RJBOneTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBOneTextField.m; sourceTree = "<group>"; };
+		937FE5E31FE814F000667E99 /* RJBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBBaseViewController.m; sourceTree = "<group>"; };
+		937FE5E41FE814F000667E99 /* RJBTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBTabBar.h; sourceTree = "<group>"; };
+		937FE5E51FE814F000667E99 /* RJBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBTabBarController.m; sourceTree = "<group>"; };
+		937FE5E61FE814F000667E99 /* RJBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBNavigationController.h; sourceTree = "<group>"; };
+		937FE5E71FE814F000667E99 /* RJBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBBaseViewController.h; sourceTree = "<group>"; };
+		937FE5E81FE814F000667E99 /* RJBTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBTabBar.m; sourceTree = "<group>"; };
+		937FE5E91FE814F000667E99 /* RJBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBNavigationController.m; sourceTree = "<group>"; };
+		937FE5EA1FE814F000667E99 /* RJBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBTabBarController.h; sourceTree = "<group>"; };
+		937FE5F01FE8151000667E99 /* RJBGuidView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBGuidView.h; sourceTree = "<group>"; };
+		937FE5F11FE8151000667E99 /* RJBGuidView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBGuidView.m; sourceTree = "<group>"; };
+		937FE5F31FE8151800667E99 /* RJBGuidView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RJBGuidView.xib; sourceTree = "<group>"; };
+		937FE6051FEAB77700667E99 /* RJBTopicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBTopicModel.h; sourceTree = "<group>"; };
+		937FE6061FEAB77700667E99 /* RJBTopicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBTopicModel.m; sourceTree = "<group>"; };
+		937FE6081FEBF93300667E99 /* RJBConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBConst.h; sourceTree = "<group>"; };
+		937FE6091FEBF93300667E99 /* RJBConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBConst.m; sourceTree = "<group>"; };
+		937FE60B1FEBFC1A00667E99 /* RJBTopicCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBTopicCell.h; sourceTree = "<group>"; };
+		937FE60C1FEBFC1A00667E99 /* RJBTopicCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBTopicCell.m; sourceTree = "<group>"; };
+		937FE60D1FEBFC1A00667E99 /* RJBTopicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RJBTopicCell.xib; sourceTree = "<group>"; };
+		937FE6101FF14CAC00667E99 /* NSDate+RJBExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+RJBExtension.h"; sourceTree = "<group>"; };
+		937FE6111FF14CAC00667E99 /* NSDate+RJBExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RJBExtension.m"; sourceTree = "<group>"; };
+		937FE6131FF2917D00667E99 /* RJBBaseTopicController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBBaseTopicController.h; sourceTree = "<group>"; };
+		937FE6141FF2917D00667E99 /* RJBBaseTopicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBBaseTopicController.m; sourceTree = "<group>"; };
+		937FE6161FF3EAA100667E99 /* RJBTopicPictureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBTopicPictureView.h; sourceTree = "<group>"; };
+		937FE6171FF3EAA100667E99 /* RJBTopicPictureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBTopicPictureView.m; sourceTree = "<group>"; };
+		937FE6191FF3EB1E00667E99 /* RJBTopicPictureView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RJBTopicPictureView.xib; sourceTree = "<group>"; };
+		937FE61E1FFBDD2400667E99 /* RJBShowPictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBShowPictureViewController.h; sourceTree = "<group>"; };
+		937FE61F1FFBDD2500667E99 /* RJBShowPictureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBShowPictureViewController.m; sourceTree = "<group>"; };
+		937FE6201FFBDD2500667E99 /* RJBShowPictureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RJBShowPictureViewController.xib; sourceTree = "<group>"; };
+		93C36B001FD8357A00520EEB /* ThinkforGirl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThinkforGirl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93C36B0C1FD8357A00520EEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93C36B111FD8357A00520EEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93C36B121FD8357B00520EEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93C36B311FDD0EFD00520EEB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		93C36B391FDD30E300520EEB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		93C36B3C1FDD30E300520EEB /* UIBarButtonItem+RJBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+RJBExtension.m"; sourceTree = "<group>"; };
+		93C36B3D1FDD30E300520EEB /* UIView+RJBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RJBExtension.m"; sourceTree = "<group>"; };
+		93C36B3E1FDD30E300520EEB /* UIButton+RJBButtonBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RJBButtonBlock.m"; sourceTree = "<group>"; };
+		93C36B3F1FDD30E300520EEB /* UIView+RJBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RJBExtension.h"; sourceTree = "<group>"; };
+		93C36B401FDD30E300520EEB /* UIBarButtonItem+RJBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+RJBExtension.h"; sourceTree = "<group>"; };
+		93C36B411FDD30E300520EEB /* UIButton+RJBButtonBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+RJBButtonBlock.h"; sourceTree = "<group>"; };
+		93C36B4B1FDD30E300520EEB /* RJBEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBEssenceViewController.m; sourceTree = "<group>"; };
+		93C36B4C1FDD30E300520EEB /* RJBEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBEssenceViewController.h; sourceTree = "<group>"; };
+		93C36B511FDD30E300520EEB /* RJBNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBNewViewController.m; sourceTree = "<group>"; };
+		93C36B521FDD30E300520EEB /* RJBNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBNewViewController.h; sourceTree = "<group>"; };
+		93C36B571FDD30E300520EEB /* RJBMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBMeViewController.h; sourceTree = "<group>"; };
+		93C36B581FDD30E300520EEB /* RJBMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBMeViewController.m; sourceTree = "<group>"; };
+		93C36B5A1FDD30E300520EEB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		93C36B5E1FDD30E300520EEB /* RJBFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBFriendTrendsViewController.m; sourceTree = "<group>"; };
+		93C36B5F1FDD30E300520EEB /* RJBFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBFriendTrendsViewController.h; sourceTree = "<group>"; };
+		93C36B701FDD41E700520EEB /* RJBFriendTrendsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RJBFriendTrendsViewController.xib; sourceTree = "<group>"; };
+		93C36B721FDD4BC900520EEB /* RJBRecommendController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBRecommendController.h; sourceTree = "<group>"; };
+		93C36B731FDD4BC900520EEB /* RJBRecommendController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBRecommendController.m; sourceTree = "<group>"; };
+		93C36B741FDD4BC900520EEB /* RJBRecommendController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RJBRecommendController.xib; sourceTree = "<group>"; };
+		93C36B771FDD597E00520EEB /* RJBRecommendTagModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBRecommendTagModel.h; sourceTree = "<group>"; };
+		93C36B781FDD597E00520EEB /* RJBRecommendTagModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBRecommendTagModel.m; sourceTree = "<group>"; };
+		93C36B7A1FDD5C0000520EEB /* RJBRecommendTagCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBRecommendTagCell.h; sourceTree = "<group>"; };
+		93C36B7B1FDD5C0000520EEB /* RJBRecommendTagCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBRecommendTagCell.m; sourceTree = "<group>"; };
+		93C36B7C1FDD5C0000520EEB /* RJBRecommendTagCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RJBRecommendTagCell.xib; sourceTree = "<group>"; };
+		93C36B7F1FDD6E4700520EEB /* RJBRecommendUserCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBRecommendUserCell.h; sourceTree = "<group>"; };
+		93C36B801FDD6E4700520EEB /* RJBRecommendUserCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBRecommendUserCell.m; sourceTree = "<group>"; };
+		93C36B811FDD6E4700520EEB /* RJBRecommendUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RJBRecommendUserCell.xib; sourceTree = "<group>"; };
+		93C36B841FDD709900520EEB /* RJBRecommendUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBRecommendUserModel.h; sourceTree = "<group>"; };
+		93C36B851FDD709900520EEB /* RJBRecommendUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBRecommendUserModel.m; sourceTree = "<group>"; };
+		93C36B8A1FE0246400520EEB /* RJBRecommendTagsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBRecommendTagsTableViewController.h; sourceTree = "<group>"; };
+		93C36B8B1FE0246400520EEB /* RJBRecommendTagsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBRecommendTagsTableViewController.m; sourceTree = "<group>"; };
+		93C36B8C1FE0246400520EEB /* RJBRecommendTagsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RJBRecommendTagsTableViewController.xib; sourceTree = "<group>"; };
+		93C36B8F1FE026E400520EEB /* RJBRecommendTagsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBRecommendTagsModel.h; sourceTree = "<group>"; };
+		93C36B901FE026E400520EEB /* RJBRecommendTagsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBRecommendTagsModel.m; sourceTree = "<group>"; };
+		93C36B921FE0286200520EEB /* RJBRecommendTagTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBRecommendTagTableViewCell.h; sourceTree = "<group>"; };
+		93C36B931FE0286200520EEB /* RJBRecommendTagTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBRecommendTagTableViewCell.m; sourceTree = "<group>"; };
+		93C36B941FE0286200520EEB /* RJBRecommendTagTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RJBRecommendTagTableViewCell.xib; sourceTree = "<group>"; };
+		93D1581F204C39E900F09F15 /* RJBUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBUserModel.h; sourceTree = "<group>"; };
+		93D15820204C39E900F09F15 /* RJBUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBUserModel.m; sourceTree = "<group>"; };
+		93D15822204C3AEC00F09F15 /* RJBCommentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBCommentModel.h; sourceTree = "<group>"; };
+		93D15823204C3AEC00F09F15 /* RJBCommentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBCommentModel.m; sourceTree = "<group>"; };
+		93D1584A2055429900F09F15 /* UIImage+RJBExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+RJBExtension.h"; sourceTree = "<group>"; };
+		93D1584B2055429900F09F15 /* UIImage+RJBExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RJBExtension.m"; sourceTree = "<group>"; };
+		93D158512058195300F09F15 /* RJBPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBPublishViewController.h; sourceTree = "<group>"; };
+		93D158522058195300F09F15 /* RJBPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBPublishViewController.m; sourceTree = "<group>"; };
+		93D158532058195300F09F15 /* RJBPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RJBPublishViewController.xib; sourceTree = "<group>"; };
+		93D158692060839400F09F15 /* RJBPushWordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBPushWordViewController.h; sourceTree = "<group>"; };
+		93D1586A2060839400F09F15 /* RJBPushWordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBPushWordViewController.m; sourceTree = "<group>"; };
+		93D158BC2067A0E400F09F15 /* RJBTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBTextView.m; sourceTree = "<group>"; };
+		93D158BD2067A0E400F09F15 /* RJBTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBTextView.h; sourceTree = "<group>"; };
+		93D158BF2067A5DC00F09F15 /* RJBAddTagToolBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBAddTagToolBar.h; sourceTree = "<group>"; };
+		93D158C02067A5DC00F09F15 /* RJBAddTagToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBAddTagToolBar.m; sourceTree = "<group>"; };
+		93D158C22067A5E800F09F15 /* RJBAddTagToolBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RJBAddTagToolBar.xib; sourceTree = "<group>"; };
+		EE8CC522CA849887E953FC4B /* Pods-ThinkforGirl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkforGirl.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThinkforGirl/Pods-ThinkforGirl.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93C36AFD1FD8357A00520EEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F702D4F63C79996FC801B427 /* libPods-ThinkforGirl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		113CAE30CA38EB2C4DE4D7D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C924858BD3CEA6CE94AEFCE /* libPods-ThinkforGirl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11512D022CE51E962D2DAE42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0848C04B31E54D10588D1B69 /* Pods-ThinkforGirl.debug.xcconfig */,
+				EE8CC522CA849887E953FC4B /* Pods-ThinkforGirl.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		937FE5E21FE814F000667E99 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				937FE5E71FE814F000667E99 /* RJBBaseViewController.h */,
+				937FE5E31FE814F000667E99 /* RJBBaseViewController.m */,
+				937FE5EA1FE814F000667E99 /* RJBTabBarController.h */,
+				937FE5E51FE814F000667E99 /* RJBTabBarController.m */,
+				937FE5E61FE814F000667E99 /* RJBNavigationController.h */,
+				937FE5E91FE814F000667E99 /* RJBNavigationController.m */,
+				937FE5E41FE814F000667E99 /* RJBTabBar.h */,
+				937FE5E81FE814F000667E99 /* RJBTabBar.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		937FE5EB1FE814F000667E99 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				937FE5F01FE8151000667E99 /* RJBGuidView.h */,
+				937FE5F11FE8151000667E99 /* RJBGuidView.m */,
+				937FE5F31FE8151800667E99 /* RJBGuidView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		937FE5F51FE9696400667E99 /* ChildControllers */ = {
+			isa = PBXGroup;
+			children = (
+				937FE6131FF2917D00667E99 /* RJBBaseTopicController.h */,
+				937FE6141FF2917D00667E99 /* RJBBaseTopicController.m */,
+				937FE61E1FFBDD2400667E99 /* RJBShowPictureViewController.h */,
+				937FE61F1FFBDD2500667E99 /* RJBShowPictureViewController.m */,
+				937FE6201FFBDD2500667E99 /* RJBShowPictureViewController.xib */,
+			);
+			path = ChildControllers;
+			sourceTree = "<group>";
+		};
+		93C36AF71FD8357A00520EEB = {
+			isa = PBXGroup;
+			children = (
+				93C36B021FD8357A00520EEB /* ThinkforGirl */,
+				93C36B011FD8357A00520EEB /* Products */,
+				11512D022CE51E962D2DAE42 /* Pods */,
+				113CAE30CA38EB2C4DE4D7D8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		93C36B011FD8357A00520EEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93C36B001FD8357A00520EEB /* ThinkforGirl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93C36B021FD8357A00520EEB /* ThinkforGirl */ = {
+			isa = PBXGroup;
+			children = (
+				93C36B381FDD30E300520EEB /* Classes */,
+				93C36B0C1FD8357A00520EEB /* Assets.xcassets */,
+				93C36B111FD8357A00520EEB /* Info.plist */,
+				93C36B121FD8357B00520EEB /* main.m */,
+				93C36B311FDD0EFD00520EEB /* PrefixHeader.pch */,
+				937FE6081FEBF93300667E99 /* RJBConst.h */,
+				937FE6091FEBF93300667E99 /* RJBConst.m */,
+			);
+			path = ThinkforGirl;
+			sourceTree = "<group>";
+		};
+		93C36B381FDD30E300520EEB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				93D1584D2058191200F09F15 /* Publish-发布 */,
+				93C36B5A1FDD30E300520EEB /* AppDelegate.m */,
+				93C36B391FDD30E300520EEB /* AppDelegate.h */,
+				93C36B3A1FDD30E300520EEB /* Other */,
+				93C36B481FDD30E300520EEB /* Essence-精华 */,
+				93C36B4E1FDD30E300520EEB /* New-新帖 */,
+				93C36B541FDD30E300520EEB /* Mine-我的 */,
+				93C36B5B1FDD30E300520EEB /* FriendTrends-关注 */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		93C36B3A1FDD30E300520EEB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				937FE5E21FE814F000667E99 /* Controllers */,
+				937FE5EB1FE814F000667E99 /* Views */,
+				93C36B3B1FDD30E300520EEB /* Category */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		93C36B3B1FDD30E300520EEB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				93C36B3F1FDD30E300520EEB /* UIView+RJBExtension.h */,
+				93C36B3D1FDD30E300520EEB /* UIView+RJBExtension.m */,
+				93C36B401FDD30E300520EEB /* UIBarButtonItem+RJBExtension.h */,
+				93C36B3C1FDD30E300520EEB /* UIBarButtonItem+RJBExtension.m */,
+				93C36B411FDD30E300520EEB /* UIButton+RJBButtonBlock.h */,
+				93C36B3E1FDD30E300520EEB /* UIButton+RJBButtonBlock.m */,
+				937FE6101FF14CAC00667E99 /* NSDate+RJBExtension.h */,
+				937FE6111FF14CAC00667E99 /* NSDate+RJBExtension.m */,
+				93D1584A2055429900F09F15 /* UIImage+RJBExtension.h */,
+				93D1584B2055429900F09F15 /* UIImage+RJBExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		93C36B481FDD30E300520EEB /* Essence-精华 */ = {
+			isa = PBXGroup;
+			children = (
+				937FE5F51FE9696400667E99 /* ChildControllers */,
+				93C36B491FDD30E300520EEB /* Models */,
+				93C36B4A1FDD30E300520EEB /* Controllers */,
+				93C36B4D1FDD30E300520EEB /* Views */,
+			);
+			path = "Essence-精华";
+			sourceTree = "<group>";
+		};
+		93C36B491FDD30E300520EEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93C36B8F1FE026E400520EEB /* RJBRecommendTagsModel.h */,
+				93C36B901FE026E400520EEB /* RJBRecommendTagsModel.m */,
+				937FE6051FEAB77700667E99 /* RJBTopicModel.h */,
+				937FE6061FEAB77700667E99 /* RJBTopicModel.m */,
+				93D1581F204C39E900F09F15 /* RJBUserModel.h */,
+				93D15820204C39E900F09F15 /* RJBUserModel.m */,
+				93D15822204C3AEC00F09F15 /* RJBCommentModel.h */,
+				93D15823204C3AEC00F09F15 /* RJBCommentModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93C36B4A1FDD30E300520EEB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93C36B4C1FDD30E300520EEB /* RJBEssenceViewController.h */,
+				93C36B4B1FDD30E300520EEB /* RJBEssenceViewController.m */,
+				93C36B8A1FE0246400520EEB /* RJBRecommendTagsTableViewController.h */,
+				93C36B8B1FE0246400520EEB /* RJBRecommendTagsTableViewController.m */,
+				93C36B8C1FE0246400520EEB /* RJBRecommendTagsTableViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		93C36B4D1FDD30E300520EEB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93C36B921FE0286200520EEB /* RJBRecommendTagTableViewCell.h */,
+				93C36B931FE0286200520EEB /* RJBRecommendTagTableViewCell.m */,
+				93C36B941FE0286200520EEB /* RJBRecommendTagTableViewCell.xib */,
+				937FE60B1FEBFC1A00667E99 /* RJBTopicCell.h */,
+				937FE60C1FEBFC1A00667E99 /* RJBTopicCell.m */,
+				937FE60D1FEBFC1A00667E99 /* RJBTopicCell.xib */,
+				937FE6161FF3EAA100667E99 /* RJBTopicPictureView.h */,
+				937FE6171FF3EAA100667E99 /* RJBTopicPictureView.m */,
+				937FE6191FF3EB1E00667E99 /* RJBTopicPictureView.xib */,
+				93636A6A2016361200870C02 /* RJBTopicVoiceView.h */,
+				93636A6B2016361200870C02 /* RJBTopicVoiceView.m */,
+				93636A6D2016361D00870C02 /* RJBTopicVoiceView.xib */,
+				93636A6F2046F36400870C02 /* RJBTopVideoView.h */,
+				93636A702046F36400870C02 /* RJBTopVideoView.m */,
+				93636A722046F36D00870C02 /* RJBTopVideoView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93C36B4E1FDD30E300520EEB /* New-新帖 */ = {
+			isa = PBXGroup;
+			children = (
+				93C36B4F1FDD30E300520EEB /* Models */,
+				93C36B501FDD30E300520EEB /* Controllers */,
+				93C36B531FDD30E300520EEB /* Views */,
+			);
+			path = "New-新帖";
+			sourceTree = "<group>";
+		};
+		93C36B4F1FDD30E300520EEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93C36B501FDD30E300520EEB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93C36B521FDD30E300520EEB /* RJBNewViewController.h */,
+				93C36B511FDD30E300520EEB /* RJBNewViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		93C36B531FDD30E300520EEB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93C36B541FDD30E300520EEB /* Mine-我的 */ = {
+			isa = PBXGroup;
+			children = (
+				93C36B551FDD30E300520EEB /* Models */,
+				93C36B561FDD30E300520EEB /* Controllers */,
+				93C36B591FDD30E300520EEB /* Views */,
+			);
+			path = "Mine-我的";
+			sourceTree = "<group>";
+		};
+		93C36B551FDD30E300520EEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93C36B561FDD30E300520EEB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93C36B571FDD30E300520EEB /* RJBMeViewController.h */,
+				93C36B581FDD30E300520EEB /* RJBMeViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		93C36B591FDD30E300520EEB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93C36B5B1FDD30E300520EEB /* FriendTrends-关注 */ = {
+			isa = PBXGroup;
+			children = (
+				93C36B5C1FDD30E300520EEB /* Models */,
+				93C36B5D1FDD30E300520EEB /* Controllers */,
+				93C36B601FDD30E300520EEB /* Views */,
+			);
+			path = "FriendTrends-关注";
+			sourceTree = "<group>";
+		};
+		93C36B5C1FDD30E300520EEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93C36B771FDD597E00520EEB /* RJBRecommendTagModel.h */,
+				93C36B781FDD597E00520EEB /* RJBRecommendTagModel.m */,
+				93C36B841FDD709900520EEB /* RJBRecommendUserModel.h */,
+				93C36B851FDD709900520EEB /* RJBRecommendUserModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93C36B5D1FDD30E300520EEB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93C36B5F1FDD30E300520EEB /* RJBFriendTrendsViewController.h */,
+				93C36B5E1FDD30E300520EEB /* RJBFriendTrendsViewController.m */,
+				93C36B701FDD41E700520EEB /* RJBFriendTrendsViewController.xib */,
+				93C36B721FDD4BC900520EEB /* RJBRecommendController.h */,
+				93C36B731FDD4BC900520EEB /* RJBRecommendController.m */,
+				93C36B741FDD4BC900520EEB /* RJBRecommendController.xib */,
+				937FE5DA1FE6171B00667E99 /* RJBLoginViewController.h */,
+				937FE5DB1FE6171B00667E99 /* RJBLoginViewController.m */,
+				937FE5DC1FE6171B00667E99 /* RJBLoginViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		93C36B601FDD30E300520EEB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93C36B7A1FDD5C0000520EEB /* RJBRecommendTagCell.h */,
+				93C36B7B1FDD5C0000520EEB /* RJBRecommendTagCell.m */,
+				93C36B7C1FDD5C0000520EEB /* RJBRecommendTagCell.xib */,
+				93C36B7F1FDD6E4700520EEB /* RJBRecommendUserCell.h */,
+				93C36B801FDD6E4700520EEB /* RJBRecommendUserCell.m */,
+				93C36B811FDD6E4700520EEB /* RJBRecommendUserCell.xib */,
+				937FE5DF1FE6263D00667E99 /* RJBOneTextField.h */,
+				937FE5E01FE6263D00667E99 /* RJBOneTextField.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93D1584D2058191200F09F15 /* Publish-发布 */ = {
+			isa = PBXGroup;
+			children = (
+				93D1584E2058191200F09F15 /* Models */,
+				93D1584F2058191200F09F15 /* Controllers */,
+				93D158502058191200F09F15 /* Views */,
+			);
+			path = "Publish-发布";
+			sourceTree = "<group>";
+		};
+		93D1584E2058191200F09F15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93D1584F2058191200F09F15 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93D158512058195300F09F15 /* RJBPublishViewController.h */,
+				93D158522058195300F09F15 /* RJBPublishViewController.m */,
+				93D158532058195300F09F15 /* RJBPublishViewController.xib */,
+				93D158692060839400F09F15 /* RJBPushWordViewController.h */,
+				93D1586A2060839400F09F15 /* RJBPushWordViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		93D158502058191200F09F15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93D158BD2067A0E400F09F15 /* RJBTextView.h */,
+				93D158BC2067A0E400F09F15 /* RJBTextView.m */,
+				93D158BF2067A5DC00F09F15 /* RJBAddTagToolBar.h */,
+				93D158C02067A5DC00F09F15 /* RJBAddTagToolBar.m */,
+				93D158C22067A5E800F09F15 /* RJBAddTagToolBar.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93C36AFF1FD8357A00520EEB /* ThinkforGirl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93C36B161FD8357B00520EEB /* Build configuration list for PBXNativeTarget "ThinkforGirl" */;
+			buildPhases = (
+				3B9CAD698EB069B7A0A27E24 /* [CP] Check Pods Manifest.lock */,
+				93C36AFC1FD8357A00520EEB /* Sources */,
+				93C36AFD1FD8357A00520EEB /* Frameworks */,
+				93C36AFE1FD8357A00520EEB /* Resources */,
+				3E5EC0F5CF0CA972DE75CE3B /* [CP] Embed Pods Frameworks */,
+				32DA532B99C93BEAB4E23A46 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThinkforGirl;
+			productName = ThinkforGirl;
+			productReference = 93C36B001FD8357A00520EEB /* ThinkforGirl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93C36AF81FD8357A00520EEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RJB;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = bin;
+				TargetAttributes = {
+					93C36AFF1FD8357A00520EEB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 93C36AFB1FD8357A00520EEB /* Build configuration list for PBXProject "ThinkforGirl" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93C36AF71FD8357A00520EEB;
+			productRefGroup = 93C36B011FD8357A00520EEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93C36AFF1FD8357A00520EEB /* ThinkforGirl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93C36AFE1FD8357A00520EEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93C36B961FE0286200520EEB /* RJBRecommendTagTableViewCell.xib in Resources */,
+				937FE5DE1FE6171B00667E99 /* RJBLoginViewController.xib in Resources */,
+				93C36B7E1FDD5C0000520EEB /* RJBRecommendTagCell.xib in Resources */,
+				93C36B0D1FD8357A00520EEB /* Assets.xcassets in Resources */,
+				937FE5F41FE8151800667E99 /* RJBGuidView.xib in Resources */,
+				93D158552058195300F09F15 /* RJBPublishViewController.xib in Resources */,
+				93C36B8E1FE0246400520EEB /* RJBRecommendTagsTableViewController.xib in Resources */,
+				937FE60F1FEBFC1A00667E99 /* RJBTopicCell.xib in Resources */,
+				93636A6E2016361D00870C02 /* RJBTopicVoiceView.xib in Resources */,
+				93636A732046F36D00870C02 /* RJBTopVideoView.xib in Resources */,
+				93C36B761FDD4BC900520EEB /* RJBRecommendController.xib in Resources */,
+				93D158C32067A5E800F09F15 /* RJBAddTagToolBar.xib in Resources */,
+				93C36B831FDD6E4700520EEB /* RJBRecommendUserCell.xib in Resources */,
+				93C36B711FDD41E700520EEB /* RJBFriendTrendsViewController.xib in Resources */,
+				937FE6221FFBDD2500667E99 /* RJBShowPictureViewController.xib in Resources */,
+				937FE61A1FF3EB1E00667E99 /* RJBTopicPictureView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32DA532B99C93BEAB4E23A46 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ThinkforGirl/Pods-ThinkforGirl-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThinkforGirl/Pods-ThinkforGirl-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B9CAD698EB069B7A0A27E24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThinkforGirl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E5EC0F5CF0CA972DE75CE3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThinkforGirl/Pods-ThinkforGirl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93C36AFC1FD8357A00520EEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				937FE60A1FEBF93300667E99 /* RJBConst.m in Sources */,
+				93C36B791FDD597E00520EEB /* RJBRecommendTagModel.m in Sources */,
+				93D1584C2055429900F09F15 /* UIImage+RJBExtension.m in Sources */,
+				93D158C12067A5DC00F09F15 /* RJBAddTagToolBar.m in Sources */,
+				93C36B6A1FDD30E300520EEB /* AppDelegate.m in Sources */,
+				93C36B671FDD30E300520EEB /* RJBEssenceViewController.m in Sources */,
+				93D1586B2060839400F09F15 /* RJBPushWordViewController.m in Sources */,
+				93C36B8D1FE0246400520EEB /* RJBRecommendTagsTableViewController.m in Sources */,
+				93C36B7D1FDD5C0000520EEB /* RJBRecommendTagCell.m in Sources */,
+				937FE60E1FEBFC1A00667E99 /* RJBTopicCell.m in Sources */,
+				93C36B951FE0286200520EEB /* RJBRecommendTagTableViewCell.m in Sources */,
+				937FE5EC1FE814F000667E99 /* RJBBaseViewController.m in Sources */,
+				93636A6C2016361200870C02 /* RJBTopicVoiceView.m in Sources */,
+				937FE5ED1FE814F000667E99 /* RJBTabBarController.m in Sources */,
+				93D158BE2067A0E400F09F15 /* RJBTextView.m in Sources */,
+				937FE5DD1FE6171B00667E99 /* RJBLoginViewController.m in Sources */,
+				93C36B131FD8357B00520EEB /* main.m in Sources */,
+				93D158542058195300F09F15 /* RJBPublishViewController.m in Sources */,
+				937FE5F21FE8151000667E99 /* RJBGuidView.m in Sources */,
+				93C36B751FDD4BC900520EEB /* RJBRecommendController.m in Sources */,
+				93C36B911FE026E400520EEB /* RJBRecommendTagsModel.m in Sources */,
+				93C36B681FDD30E300520EEB /* RJBNewViewController.m in Sources */,
+				93D15824204C3AEC00F09F15 /* RJBCommentModel.m in Sources */,
+				93C36B611FDD30E300520EEB /* UIBarButtonItem+RJBExtension.m in Sources */,
+				937FE6121FF14CAC00667E99 /* NSDate+RJBExtension.m in Sources */,
+				937FE5EF1FE814F000667E99 /* RJBNavigationController.m in Sources */,
+				93636A712046F36400870C02 /* RJBTopVideoView.m in Sources */,
+				93C36B631FDD30E300520EEB /* UIButton+RJBButtonBlock.m in Sources */,
+				937FE6181FF3EAA200667E99 /* RJBTopicPictureView.m in Sources */,
+				937FE6071FEAB77700667E99 /* RJBTopicModel.m in Sources */,
+				93C36B691FDD30E300520EEB /* RJBMeViewController.m in Sources */,
+				937FE5EE1FE814F000667E99 /* RJBTabBar.m in Sources */,
+				937FE6211FFBDD2500667E99 /* RJBShowPictureViewController.m in Sources */,
+				93D15821204C39E900F09F15 /* RJBUserModel.m in Sources */,
+				93C36B821FDD6E4700520EEB /* RJBRecommendUserCell.m in Sources */,
+				93C36B621FDD30E300520EEB /* UIView+RJBExtension.m in Sources */,
+				93C36B861FDD709900520EEB /* RJBRecommendUserModel.m in Sources */,
+				937FE6151FF2917D00667E99 /* RJBBaseTopicController.m in Sources */,
+				93C36B6B1FDD30E300520EEB /* RJBFriendTrendsViewController.m in Sources */,
+				937FE5E11FE6263D00667E99 /* RJBOneTextField.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		93C36B141FD8357B00520EEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		93C36B151FD8357B00520EEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93C36B171FD8357B00520EEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0848C04B31E54D10588D1B69 /* Pods-ThinkforGirl.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = ThinkforGirl/PrefixHeader.pch;
+				INFOPLIST_FILE = ThinkforGirl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ru.ThinkforGirl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93C36B181FD8357B00520EEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE8CC522CA849887E953FC4B /* Pods-ThinkforGirl.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = ThinkforGirl/PrefixHeader.pch;
+				INFOPLIST_FILE = ThinkforGirl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ru.ThinkforGirl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93C36AFB1FD8357A00520EEB /* Build configuration list for PBXProject "ThinkforGirl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C36B141FD8357B00520EEB /* Debug */,
+				93C36B151FD8357B00520EEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93C36B161FD8357B00520EEB /* Build configuration list for PBXNativeTarget "ThinkforGirl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93C36B171FD8357B00520EEB /* Debug */,
+				93C36B181FD8357B00520EEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 93C36AF81FD8357A00520EEB /* Project object */;
+}

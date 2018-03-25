@@ -1,0 +1,38 @@
+//
+//  PrefixHeader.pch
+//  ThinkforGirl
+//
+//  Created by 茹 on 2017/12/10.
+//  Copyright © 2017年 bin. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#ifdef __OBJC__
+
+#import "UIView+RJBExtension.h"
+#import "UIButton+RJBButtonBlock.h"
+#import "UIBarButtonItem+RJBExtension.h"
+#import <AFNetworking.h>
+#import <SVProgressHUD.h>
+#import <MJExtension.h>
+#import "RJBConst.h"
+#import "UIImage+RJBExtension.h"
+
+
+#define RJBRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define RJBGlobalColor RJBRGBColor(233,233,233)
+
+//屏幕宽度
+#define RJBScreenW [UIScreen mainScreen].bounds.size.width
+//屏幕的高度
+#define RJBScreenH [UIScreen mainScreen].bounds.size.height
+
+#define RJBNoteCenter [NSNotificationCenter defaultCenter]
+
+#endif
+
+#endif /* PrefixHeader_pch */
