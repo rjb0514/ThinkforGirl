@@ -8,12 +8,13 @@
 
 #import "RJBAddTageViewController.h"
 #import "RJBTagButton.h"
+#import "RJBTagTextField.h"
 
-@interface RJBAddTageViewController ()
+@interface RJBAddTageViewController ()<UITextFieldDelegate>
 
 @property (nonatomic, strong) UIView *contentView;
 
-@property (nonatomic, strong) UITextField *textField;
+@property (nonatomic, strong) RJBTagTextField *textField;
 
 /** 添加按钮 */
 @property (nonatomic, strong) UIButton *addButton;
@@ -48,12 +49,22 @@
     [self.view addSubview:self.contentView];
     
 }
+#pragma mark - textField
 - (void)setupTextField {
-    UITextField *textField = [UITextField new];
+    RJBTagTextField *textField = [RJBTagTextField new];
     textField.placeholder = @"多个标签用逗号或者换行";
-//    [textField sizeToFit];
+    //    [textField sizeToFit];
     textField.width = self.contentView.width;
+    __weak typeof(self) weakSelf = self;
+    textField.deleteBlock = ^{
+        
+        if ([weakSelf.textField hasText]) {
+            return ;
+        }
+        [weakSelf deleteBtn:weakSelf.tagButtons.lastObject];
+    };
     textField.height = 20;
+    textField.delegate = self;
     [textField setValue:[UIColor redColor] forKeyPath:@"_placeholderLabel.textColor"];
     [textField becomeFirstResponder];
     [textField addTarget:self action:@selector(textfieldDidChange) forControlEvents:UIControlEventEditingChanged];
@@ -62,24 +73,71 @@
     
 }
 
+
+
 //监听textField 的文字输入
 - (void)textfieldDidChange {
     
     if (self.textField.hasText) {
+        //更新textField的frame
+        [self updateTextFieldFrame];
         //有文字
         self.addButton.hidden = NO;
         self.addButton.y = CGRectGetMaxY(self.textField.frame) + RJBTagMargin;
         [self.addButton setTitle:[NSString stringWithFormat:@"添加标签:%@",self.textField.text] forState:UIControlStateNormal];
+        
+        //获取最后一个字符 如果输入的是逗号的处理
+        NSString *text = self.textField.text;
+        NSUInteger len = self.textField.text.length;
+        NSString *lastLetter = [self.textField.text substringFromIndex:len - 1];
+        NSLog(@"%@",lastLetter);
+        if (([lastLetter isEqualToString:@","] || [lastLetter isEqualToString:@"，"]) && len > 1) {
+            self.textField.text = [text substringToIndex:len - 1];
+            
+            
+            [self addBtnClick];
+        }
+        
     }else {
         //没有文字
         self.addButton.hidden = YES;
     }
-    
-    [self updateTageButtonFrame];
 }
 
 
-//textField下面添加标签按钮的点击事件
+//监听最后下角的点击（换行 go  完成）
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    RJBFunc;
+    //点击换行 添加标签
+    if (self.textField.hasText) {
+        [self addBtnClick];
+    }
+    
+    return YES;
+}
+
+
+//更新textField的frame
+- (void)updateTextFieldFrame {
+    //如果是最后一个
+    UIButton *btn = self.tagButtons.lastObject;
+    CGFloat lefTextFieldtWith = self.contentView.width - CGRectGetMaxX(btn.frame) - RJBTagMargin;
+    
+    if (lefTextFieldtWith >= self.getTextFieldWith) {
+        self.textField.x = CGRectGetMaxX(btn.frame) + RJBTagMargin;
+        self.textField.y = btn.y;
+    }else {
+        //显示在下一行
+        self.textField.x = 0;
+        self.textField.y = CGRectGetMaxY(btn.frame) + RJBTagMargin;
+    }
+}
+
+
+#pragma 按钮的点击事件
+
+
 - (void)addBtnClick {
     RJBFunc;
     RJBTagButton *btn = [RJBTagButton buttonWithType: UIButtonTypeCustom];
@@ -95,7 +153,9 @@
     self.addButton.hidden = !self.textField.hasText;
     //更新frame
     [self updateTageButtonFrame];
-
+    //更新textFiled
+    [self updateTextFieldFrame];
+    
 }
 
 //标签删除按钮的点击
@@ -105,6 +165,7 @@
     [self.tagButtons removeObject:btn];
     [UIView animateWithDuration:0.25 animations:^{
         [self updateTageButtonFrame];
+        [self updateTextFieldFrame];
     }];
     
 }
@@ -112,7 +173,7 @@
 //更新标签按钮的frame
 - (void)updateTageButtonFrame {
     
-
+    
     [self.tagButtons enumerateObjectsUsingBlock:^(__kindof UIButton * _Nonnull btn, NSUInteger idx, BOOL * _Nonnull stop) {
         
         if (idx == 0) {
@@ -132,66 +193,8 @@
                 btn.y = CGRectGetMaxY(lastButton.frame) + RJBTagMargin;
             }
         }
-        //如果是最后一个
-        if (idx == self.tagButtons.count - 1) {
-            
-            CGFloat lefTextFieldtWith = self.contentView.width - CGRectGetMaxX(btn.frame) - RJBTagMargin;
-
-            if (lefTextFieldtWith >= self.getTextFieldWith) {
-                self.textField.x = CGRectGetMaxX(btn.frame) + RJBTagMargin;
-                self.textField.y = btn.y;
-            }else {
-                //显示在下一行
-                self.textField.x = 0;
-                self.textField.y = CGRectGetMaxY(btn.frame) + RJBTagMargin;
-            }
-
-        }
         
-     
     }];
- 
-     
-    
-//
-//    for (NSInteger idx = 0; idx < self.tagButtons.count; idx++) {
-//
-//        UIButton *btn = self.tagButtons[idx];
-//        if (idx == 0) {
-//            btn.x = 0;
-//            btn.y = 0;
-//        }else {
-//            //获取到上一个按钮
-//            UIButton *lastButton = self.tagButtons[idx - 1];
-//            //剩余的宽度
-//            CGFloat leftWith = self.contentView.width - CGRectGetMaxX(lastButton.frame) - RJBTagMargin;
-//            if (leftWith >= btn.width) {//显示在当行
-//                btn.x = CGRectGetMaxX(lastButton.frame) + RJBTagMargin;
-//                btn.y = lastButton.y;
-//            }else {
-//                //显示在下一行
-//                btn.x = 0;
-//                btn.y = CGRectGetMaxY(lastButton.frame) + RJBTagMargin;
-//            }
-//        }
-//        //如果是最后一个
-//        if (idx == self.tagButtons.count - 1) {
-//            //            CGFloat lefTextFieldtWith = self.contentView.width - CGRectGetMaxX(btn.frame) - RJBTagMargin;
-//            //
-//            //            if (lefTextFieldtWith >= self.textField.width) {
-//            //                self.textField.x = CGRectGetMaxX(btn.frame) + RJBTagMargin;
-//            //                self.textField.y = btn.y;
-//            //            }else {
-//            //                //显示在下一行
-//            //                self.textField.x = 0;
-//            //                self.textField.y = CGRectGetMaxY(btn.frame) + RJBTagMargin;
-//            //            }
-//            //显示在下一行
-//            self.textField.x = 0;
-//            self.textField.y = CGRectGetMaxY(btn.frame) + RJBTagMargin;
-//        }
-//
-//    }
     
 }
 
