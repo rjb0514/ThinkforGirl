@@ -14,4 +14,11 @@
  */
 @interface RJBAddTageViewController : RJBBaseViewController
 
+/** 获取tages的block */
+@property (nonatomic, copy) void(^tagsBlock)(NSArray *arr);
+
+/** 标签数组 */
+@property (nonatomic, copy) NSArray *labelList;
+
+
 @end

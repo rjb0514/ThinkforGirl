@@ -34,6 +34,20 @@
     [self setupContentView];
     [self setupTextField];
     
+    
+    //如果存在 标签 就创建 初始化tags
+    [self tags];
+    
+}
+//初始化tages
+- (void)tags {
+    
+    if (self.labelList.count) {
+        [self.labelList enumerateObjectsUsingBlock:^(NSString *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            self.textField.text = obj;
+            [self addBtnClick];
+        }];
+    }
 }
 
 
@@ -140,6 +154,14 @@
 
 - (void)addBtnClick {
     RJBFunc;
+    if (self.tagButtons.count == 5) {
+        [SVProgressHUD showErrorWithStatus:@"最多能输入5个"];
+        [SVProgressHUD setDefaultStyle:(SVProgressHUDStyleDark)];
+        
+        return;
+    }
+    
+    
     RJBTagButton *btn = [RJBTagButton buttonWithType: UIButtonTypeCustom];
     [btn setImage:[UIImage imageNamed:@"chose_tag_close_icon"] forState:UIControlStateNormal];
     [btn setTitle:self.textField.text forState:UIControlStateNormal];
@@ -219,8 +241,19 @@
     
 }
 - (void)post {
-    NSLog(@"发表");
     RJBFunc;
+//    NSMutableArray *arrM = [NSMutableArray array];
+//    [self.tagButtons enumerateObjectsUsingBlock:^(__kindof UIButton * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//        [arrM addObject:obj.currentTitle];
+//    }];
+    
+    NSArray *arr = [self.tagButtons valueForKeyPath:@"currentTitle"];
+    NSLog(@"%@",arr);
+    
+    //把数组传回去
+    !self.tagsBlock ? : self.tagsBlock(arr);
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - lazy
