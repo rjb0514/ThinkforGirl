@@ -7,6 +7,7 @@
 //
 
 #import "RJBMeViewController.h"
+#import "RJBSettingViewController.h"
 
 @interface RJBMeViewController ()
 
@@ -19,6 +20,8 @@
     
      UIBarButtonItem *setItem = [UIBarButtonItem itemWithImage:@"mine-setting-icon" hightImage:@"mine-setting-icon-click" block:^(UIButton *btn) {
            NSLog(@"设置");
+         RJBSettingViewController *vc = [RJBSettingViewController new];
+         [self.navigationController pushViewController:vc animated:YES];
     }];
     
 

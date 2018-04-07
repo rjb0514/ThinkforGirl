@@ -117,13 +117,13 @@
         }else if (btn.tag == 1){
             NSLog(@"发段子");
 //            
-//            RJBPushWordViewController *VC = [RJBPushWordViewController new];
-//            
-//            RJBNavigationController *nav = [[RJBNavigationController alloc] initWithRootViewController:VC];
-//            UIViewController *rootVC = [UIApplication sharedApplication].keyWindow.rootViewController;
-//            
+            RJBPushWordViewController *VC = [RJBPushWordViewController new];
+            
+            RJBNavigationController *nav = [[RJBNavigationController alloc] initWithRootViewController:VC];
+            UIViewController *rootVC = [UIApplication sharedApplication].keyWindow.rootViewController;
+//
 //            //这里不能用self  会有问题
-//            [rootVC presentViewController:nav animated:YES completion:nil];
+            [rootVC presentViewController:nav animated:YES completion:nil];
             
         }else if (btn.tag == 2) {
             NSLog(@"");

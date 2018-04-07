@@ -102,7 +102,7 @@
     }];
     
     
-    
+    [self addSubview:self.addBtn];
     //获取到上一个按钮
     UILabel *lastButton = self.labelList.lastObject;
     //剩余的宽度
@@ -115,6 +115,10 @@
         self.addBtn.x = 0;
         self.addBtn.y = CGRectGetMaxY(lastButton.frame) + RJBTagMargin;
     }
+    
+    
+    //整体的高度
+    self.height = CGRectGetMaxY(self.addBtn.frame) + RJBTagMargin + 45;
     
 }
 

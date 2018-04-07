@@ -37,16 +37,16 @@
 }
 
 - (void)publishCLick:(UIButton *)btn {
-//    RJBPublishViewController *VC = [RJBPublishViewController new];
-//
-//    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:VC animated:NO completion:nil];
-    RJBPushWordViewController *VC = [RJBPushWordViewController new];
+    RJBPublishViewController *VC = [RJBPublishViewController new];
+
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:VC animated:NO completion:nil];
+//    RJBPushWordViewController *VC = [RJBPushWordViewController new];
     
-    RJBNavigationController *nav = [[RJBNavigationController alloc] initWithRootViewController:VC];
-    UIViewController *rootVC = [UIApplication sharedApplication].keyWindow.rootViewController;
+//    RJBNavigationController *nav = [[RJBNavigationController alloc] initWithRootViewController:VC];
+//    UIViewController *rootVC = [UIApplication sharedApplication].keyWindow.rootViewController;
     
-    //这里不能用self  会有问题
-    [rootVC presentViewController:nav animated:YES completion:nil];
+//    这里不能用self  会有问题
+//    [rootVC presentViewController:nav animated:YES completion:nil];
     
 }
 

@@ -66,6 +66,8 @@
 		93D158C62067C1D100F09F15 /* RJBAddTageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D158C52067C1D100F09F15 /* RJBAddTageViewController.m */; };
 		93D158CC2067E63C00F09F15 /* RJBTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D158CB2067E63B00F09F15 /* RJBTagButton.m */; };
 		93D158CF206944D900F09F15 /* RJBTagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D158CE206944D900F09F15 /* RJBTagTextField.m */; };
+		93D158F62070E7BF00F09F15 /* RJBSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D158F52070E7BF00F09F15 /* RJBSettingViewController.m */; };
+		93D158FB207109AF00F09F15 /* RJBLoginTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D158FA207109AF00F09F15 /* RJBLoginTool.m */; };
 		F702D4F63C79996FC801B427 /* libPods-ThinkforGirl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C924858BD3CEA6CE94AEFCE /* libPods-ThinkforGirl.a */; };
 /* End PBXBuildFile section */
 
@@ -176,6 +178,10 @@
 		93D158CB2067E63B00F09F15 /* RJBTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBTagButton.m; sourceTree = "<group>"; };
 		93D158CD206944D900F09F15 /* RJBTagTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBTagTextField.h; sourceTree = "<group>"; };
 		93D158CE206944D900F09F15 /* RJBTagTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBTagTextField.m; sourceTree = "<group>"; };
+		93D158F42070E7BF00F09F15 /* RJBSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBSettingViewController.h; sourceTree = "<group>"; };
+		93D158F52070E7BF00F09F15 /* RJBSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBSettingViewController.m; sourceTree = "<group>"; };
+		93D158F9207109AF00F09F15 /* RJBLoginTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBLoginTool.h; sourceTree = "<group>"; };
+		93D158FA207109AF00F09F15 /* RJBLoginTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBLoginTool.m; sourceTree = "<group>"; };
 		EE8CC522CA849887E953FC4B /* Pods-ThinkforGirl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkforGirl.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThinkforGirl/Pods-ThinkforGirl.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -219,6 +225,8 @@
 				937FE5E91FE814F000667E99 /* RJBNavigationController.m */,
 				937FE5E41FE814F000667E99 /* RJBTabBar.h */,
 				937FE5E81FE814F000667E99 /* RJBTabBar.m */,
+				93D158F9207109AF00F09F15 /* RJBLoginTool.h */,
+				93D158FA207109AF00F09F15 /* RJBLoginTool.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -434,6 +442,8 @@
 			children = (
 				93C36B571FDD30E300520EEB /* RJBMeViewController.h */,
 				93C36B581FDD30E300520EEB /* RJBMeViewController.m */,
+				93D158F42070E7BF00F09F15 /* RJBSettingViewController.h */,
+				93D158F52070E7BF00F09F15 /* RJBSettingViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -691,9 +701,11 @@
 				93C36B791FDD597E00520EEB /* RJBRecommendTagModel.m in Sources */,
 				93D1584C2055429900F09F15 /* UIImage+RJBExtension.m in Sources */,
 				93D158C12067A5DC00F09F15 /* RJBAddTagToolBar.m in Sources */,
+				93D158F62070E7BF00F09F15 /* RJBSettingViewController.m in Sources */,
 				93C36B6A1FDD30E300520EEB /* AppDelegate.m in Sources */,
 				93C36B671FDD30E300520EEB /* RJBEssenceViewController.m in Sources */,
 				93D158C62067C1D100F09F15 /* RJBAddTageViewController.m in Sources */,
+				93D158FB207109AF00F09F15 /* RJBLoginTool.m in Sources */,
 				93D158CF206944D900F09F15 /* RJBTagTextField.m in Sources */,
 				93D1586B2060839400F09F15 /* RJBPushWordViewController.m in Sources */,
 				93C36B8D1FE0246400520EEB /* RJBRecommendTagsTableViewController.m in Sources */,

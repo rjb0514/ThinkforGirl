@@ -8,7 +8,7 @@ target 'ThinkforGirl' do
   # Pods for ThinkforGirl
 
 pod 'AFNetworking'
-pod 'SDWebImage'
+  pod 'SDWebImage', '~> 4.2.3'
 pod 'SVProgressHUD'
 pod 'MJExtension'
 pod 'MJRefresh'

@@ -54,7 +54,8 @@
     
     //navigationbarBackgroundWhite
     
-    
+    //重写了leftBarButtonItem 侧滑手势失灵 就写中一句代码就可以
+    self.interactivePopGestureRecognizer.delegate = nil;
     
 }
 
